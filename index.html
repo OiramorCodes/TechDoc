@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modern CSS Layout Techniques</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>Modern CSS Layout Techniques</header>
+      <a href="#Introduction_to_Modern_Layout" class="nav-link"
+        >Introduction to Modern Layout</a
+      >
+      <a href="#Why_Flexbox_&_Grid_Matter" class="nav-link"
+        >Why Flexbox & Grid Matter</a
+      >
+      <a href="#Flexbox_Basics_&_Use_Cases" class="nav-link"
+        >Flexbox Basics & Use Cases</a
+      >
+      <a href="#CSS_Grid_Overview" class="nav-link">CSS Grid Overview</a>
+      <a href="#Responsive_Design_Strategies" class="nav-link"
+        >Responsive Design Strategies</a
+      >
+      <a href="#Real_World_Examples" class="nav-link">Real World Examples</a>
+      <a href="#Resources_&_Cheatsheets" class="nav-link"
+        >Resources & Cheatsheets</a
+      >
+    </nav>
+
+    <main id="main-doc">
+      <section class="main-section" id="Introduction_to_Modern_Layout">
+        <header>Introduction to Modern Layout</header>
+        <p>
+          Modern CSS layout techniques have revolutionized the way we structure
+          web pages.
+        </p>
+        <p>
+          Before Flexbox and Grid, developers relied heavily on floats,
+          positioning, and hacks.
+        </p>
+        <code>div { float: left; }</code>
+        <p>
+          Flexbox and Grid provide more intuitive and powerful systems for
+          layout.
+        </p>
+        <p>
+          This documentation will guide you through their basics and how to
+          apply them.
+        </p>
+      </section>
+
+      <section class="main-section" id="Why_Flexbox_&_Grid_Matter">
+        <header>Why Flexbox & Grid Matter</header>
+        <p>
+          These layout models are responsive-friendly and easier to read and
+          maintain.
+        </p>
+        <p>
+          Flexbox excels at 1D layout (rows or columns), Grid at 2D (rows and
+          columns).
+        </p>
+        <ul>
+          <li>Cleaner code</li>
+          <li>Fewer media queries needed</li>
+          <li>Better alignment and distribution</li>
+        </ul>
+        <p>Modern browsers have excellent support for both.</p>
+        <code>display: flex;</code>
+      </section>
+
+      <section class="main-section" id="Flexbox_Basics_&_Use_Cases">
+        <header>Flexbox Basics & Use Cases</header>
+        <p>
+          Flexbox makes it easy to distribute space and align items in a
+          container.
+        </p>
+        <p>Useful for navbars, cards, layouts with equal heights.</p>
+        <code>display: flex; justify-content: space-between;</code>
+        <p>Use <code>align-items</code> for vertical alignment.</p>
+        <p>Use <code>flex-wrap</code> to control item wrapping.</p>
+      </section>
+
+      <section class="main-section" id="CSS_Grid_Overview">
+        <header>CSS Grid Overview</header>
+        <p>
+          CSS Grid is perfect for creating two-dimensional layouts with ease.
+        </p>
+        <p>Grids define rows and columns simultaneously.</p>
+        <code>display: grid; grid-template-columns: 1fr 1fr;</code>
+        <p>
+          You can place elements with <code>grid-column</code> and
+          <code>grid-row</code>.
+        </p>
+        <ul>
+          <li>Repeatable rows and columns</li>
+          <li>Named areas for readability</li>
+        </ul>
+      </section>
+
+      <section class="main-section" id="Responsive_Design_Strategies">
+        <header>Responsive Design Strategies</header>
+        <p>Media queries adapt layout to different screen sizes.</p>
+        <p>Use <code>@media</code> to define breakpoints.</p>
+        <code>@media (max-width: 768px) { ... }</code>
+        <p>Flexbox and Grid both respond well to these techniques.</p>
+        <ul>
+          <li>Stack content vertically on mobile</li>
+          <li>Change grid structure at breakpoints</li>
+        </ul>
+      </section>
+
+      <section class="main-section" id="Real_World_Examples">
+        <header>Real World Examples</header>
+        <p>Use Flexbox for navbar alignment and sidebar layouts.</p>
+        <p>Use Grid for full-page dashboards and galleries.</p>
+        <code>grid-template-areas:</code>
+        <p>Both can be combined for maximum flexibility.</p>
+        <p>
+          They’re widely used in frameworks like Tailwind, Bootstrap, and custom
+          CSS systems.
+        </p>
+      </section>
+
+      <section class="main-section" id="Resources_&_Cheatsheets">
+        <header>Resources & Cheatsheets</header>
+        <p>Here are some helpful links to continue learning:</p>
+        <ul>
+          <li>
+            <a
+              href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/"
+              target="_blank"
+              >Flexbox Guide - CSS-Tricks</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://css-tricks.com/snippets/css/complete-guide-grid/"
+              target="_blank"
+              >Grid Guide - CSS-Tricks</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Web/CSS"
+              target="_blank"
+              >MDN CSS Docs</a
+            >
+          </li>
+        </ul>
+        <p>Bookmark these for quick reference when building responsive UIs.</p>
+      </section>
+    </main>
+  </body>
+</html>
